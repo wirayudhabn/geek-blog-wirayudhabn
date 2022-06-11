@@ -40,7 +40,7 @@
           <div class="blog-article">
             <div class="post-info">
               <div class="post-title">
-                <h1>Capacitor's Ionic's Visual Studio Code Extension</h1>
+                <h1>When good code is important and when it's not</h1>
               </div>
               <div class="post-writer">
                 <div class="writer-img">
@@ -58,41 +58,110 @@
                 <img src="/assets/images/article-img1.png" alt="" />
               </div>
               <article class="post-text">
-                <h2>Capacitor Firefox</h2>
+                <h2>Tollways</h2>
                 <p>
-                  Mozilla Firefox is an open-source web browser developed by
-                  Mozilla. Firefox has been the second most popular web browser
-                  since January, 2018. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Molestiae, natus consequatur ex nemo
-                  adipisci nihil sapiente! Accusantium id veniam nostrum.
+                  All code has a maintenance cost. Some code of course is an
+                  absolute nightmare to maintain. We would say its maintenance
+                  cost is high. Other code is easier to maintain. We would say
+                  its maintenance cost is low, or at least relatively low
+                  compared to worse code.
                 </p>
                 <p>
-                  Mozilla Firefox is an open-source web browser developed by
-                  Mozilla. Firefox has been the second most popular web browser
-                  since January, 2018. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Molestiae, natus consequatur ex nemo
-                  adipisci nihil sapiente! Accusantium id veniam nostrum.
+                  When thinking about good code and bad code, it's worth
+                  considering when exactly code's maintenance cost is incurred.
+                  We might refer to these events as “tollways”. We can't travel
+                  these roads without paying a toll.
+                </p>
+                <p>Tollway 1: when the code is changed</p>
+                <p>
+                  For any particular piece of code, a toll is incurred every
+                  time that code needs to be changed. The size of the toll
+                  depends on how easy the code is to understand and change.
                 </p>
                 <p>
-                  Mozilla Firefox is an open-source web browser developed by
-                  Mozilla. Firefox has been the second most popular web browser
-                  since January, 2018. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Molestiae, natus consequatur ex nemo
-                  adipisci nihil sapiente! Accusantium id veniam nostrum.
+                  Tollway 2: when the code needs to be understood in order to
+                  support a change in a different area
                 </p>
-                <h2>Mozilla Firefox</h2>
                 <p>
-                  Mozilla Firefox is an open-source web browser developed by
-                  Mozilla. Firefox has been the second most popular web browser
-                  since January, 2018. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Molestiae, natus consequatur ex nemo
-                  adipisci nihil sapiente! Accusantium id veniam nostrum.
+                  Even if a piece of code doesn't need to be changed, the code
+                  incurs a toll whenever someone it needs to be understood in
+                  order to make a different change. This dependency of
+                  understanding happens when pieces of code are coupled via
+                  inheritance, passing values in methods, global variables, or
+                  any of the other ways that code can be coupled.
                 </p>
+                <p>
+                  We could put code into two categories: “leaf code”, which
+                  depends on other code but has no dependencies itself, and
+                  “branch code”, which does have dependencies, and may or may
+                  not depend on other code. Branch code incurs tolls and leaf
+                  code doesn't.
+                </p>
+                <h2>
+                  Good code matters in proportion to future tollway traffic
+                </h2>
+                <p>
+                  When any new piece of code is added to a codebase, it may be
+                  possible to predict the future “tollway traffic” of that code.
+                </p>
+                <p>
+                  Every codebase has some areas that change more frequently than
+                  others. If the code you're adding lies in a high-change area,
+                  then it's probably safe to predict that that code will have
+                  high future tollway traffic. On average it's a good investment
+                  to spend time making this code especially good because the
+                  upfront effort will get paid back a little bit every time the
+                  code gets touched in the future.
+                </p>
+                <p>
+                  Conversely, if there's a piece of code that you have good
+                  reason to believe will change infrequently, it's less
+                  important to make this code good, because the return on
+                  investment won't be as great. (If you find out that your
+                  original prediction was wrong, it may be wise to refactor the
+                  code so you don't end up paying more in toll fees than you
+                  have to.)
+                </p>
+                <p>
+                  If there's a piece of code that's very clearly “branch code”
+                  (other code depends on it) then it's usually a good idea to
+                  spend extra time to make sure this code is easily
+                  understandable. Most codebases have a small handful of key
+                  models which are touched by a large amount of code in the
+                  codebase. If the branch code is sound, it's a great benefit.
+                  If the branch code has problems (e.g. some fundamental concept
+                  was poorly-named early on) then those problems will stretch
+                  their tentacles throughout the codebase and cause very
+                  expensive problems.
+                </p>
+                <h2>Bad reasons to write bad code</h2>
+                <p>
+                  It's commonly believed that it's wise to take on “strategic
+                  technical debt” in order to meet deadlines. In theory this is
+                  a smart way to go, but in practice it's always a farce. The
+                  debt gets incurred but then never paid back.
+                </p>
+                <p>
+                  It's also a mistake to write crappy code because “users don't
+                  care about code”. Users obviously don't literally care about
+                  code, but users do experience the symptoms of bad code when
+                  the product is full of bugs and the development team's
+                  productivity slows to a crawl.
+                </p>
+                <span>Original content by: Jason Swett</span>
+                <br />
+                <a
+                  class="link-reference"
+                  target="_blank"
+                  href="https://www.codewithjason.com/when-good-code-is-important-and-when-its-not/"
+                >
+                  https://www.codewithjason.com/when-good-code-is-important-and-when-its-not/
+                </a>
               </article>
               <div class="post-tags">
-                <span>#capacitor</span>
-                <span>#firefox</span>
-                <span>#visual-studio-code</span>
+                <a href="#">#code</a>
+                <a href="#">#developer</a>
+                <a href="#">#tips</a>
               </div>
 
               <aside class="writer-profile">
@@ -102,11 +171,9 @@
                 <div class="profile-info">
                   <h1>Cahyadi Krishna</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae, natus consequatur ex nemo adipisci nihil
-                    sapiente! Accusantium id veniam nostrum. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Molestiae,
-                    praesentium?
+                    Hello everyone, my name is cahyadi krishna. I'm from Bali
+                    and currently studying Information Systems major. My hobbies
+                    are coding, design and playing games.
                   </p>
                   <div class="profile-socmed">
                     <span>#capacitor</span>
@@ -118,11 +185,18 @@
             </div>
           </div>
           <aside class="post-socmed">
-            <ul>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>GitHub</li>
-            </ul>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/humanit__/?hl=id"
+            >
+              <img src="/assets/images/icon-instagram.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="/assets/images/icon-twitter.svg" alt="" />
+            </a>
+            <a target="_blank" href="https://github.com/cahyadikrishna">
+              <img src="/assets/images/icon-github.svg" alt="" />
+            </a>
           </aside>
         </div>
       </div>

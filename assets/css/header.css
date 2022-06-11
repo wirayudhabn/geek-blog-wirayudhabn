@@ -3,10 +3,10 @@ body {
 }
 
 header {
+  top: 0;
   display: flex;
   justify-content: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 16px 0;
   background-color: white;
   width: 100%;
   position: sticky;
@@ -32,9 +32,16 @@ header .header-container {
 }
 
 .header-content-left h1 {
+  padding: 6px 0;
   color: #4a8bfc;
   font-size: 24px;
   font-weight: 700;
+  background-image: linear-gradient(45deg, #4a8bfc, #1e55b5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .header-content-left nav ul {
