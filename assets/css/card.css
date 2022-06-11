@@ -38,9 +38,17 @@
 }
 
 .article-title {
+  text-decoration: none;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
+  color: #000;
+}
+
+.article-title:hover {
+  text-decoration: underline;
+  line-height: 1.4;
+  color: #4a8bfc;
 }
 
 .article-desc {
