@@ -134,7 +134,17 @@
 }
 
 .profile-socmed {
+  display: flex;
+  gap: 10px;
   margin-top: 16px;
+}
+
+.profile-socmed a {
+  text-decoration: none;
+}
+
+.profile-socmed img {
+  width: 28px;
 }
 
 .post-tags {

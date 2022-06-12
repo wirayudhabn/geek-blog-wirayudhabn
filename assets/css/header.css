@@ -86,3 +86,12 @@ button.sign-up-btn {
   color: #ffffff;
   background: #4a8bfc;
 }
+
+button.sign-in-btn:hover {
+  color: #4a8bfc;
+  border: 2px solid #4a8bfc !important;
+}
+
+button.sign-up-btn:hover {
+  background: #1e55b5;
+}
