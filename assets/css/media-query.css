@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px) {
+  .header-container h1 {
+    font-size: 22px;
+  }
+
+  .header-container nav,
+  .header-container button {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  nav.mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 64px;
+    padding: 32px 0;
+    left: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid #e6e6e6;
+    box-shadow: 0 5px 6px rgba(182, 182, 182, 16%);
+  }
+
+  nav.mobile ul {
+    flex-direction: column;
+  }
+
+  nav.mobile ul li {
+    margin: 8px 0px;
+  }
+
+  button.mobile {
+    display: block;
+    margin: 16px auto;
+  }
+}
