@@ -62,7 +62,7 @@ nav ul li a.active {
   gap: 15px;
 }
 
-.right-menu button {
+header button {
   width: 80px;
   height: 38px;
   border: none;
@@ -90,6 +90,10 @@ button.sign-up-btn:hover {
   background: #1e55b5;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .menu-button {
   display: flex;
   flex-direction: column;
@@ -104,4 +108,8 @@ button.sign-up-btn:hover {
   height: 3px;
   background-color: grey;
   border-radius: 5px;
+}
+
+.mobile-btn {
+  display: none;
 }
