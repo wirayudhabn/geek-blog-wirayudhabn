@@ -25,13 +25,7 @@ header .header-container {
   text-decoration: none;
 }
 
-.header-content-left {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.header-content-left h1 {
+.logo h1 {
   padding: 6px 0;
   color: #4a8bfc;
   font-size: 24px;
@@ -44,31 +38,31 @@ header .header-container {
   -moz-text-fill-color: transparent;
 }
 
-.header-content-left nav ul {
+nav ul {
   display: flex;
   gap: 20px;
 }
 
-.header-content-left nav ul li a {
+nav ul li a {
   font-size: 14px;
   text-decoration: none;
   color: #474747;
 }
 
-.header-content-left nav ul li a:hover {
+nav ul li a:hover {
   color: #5b96fc;
 }
 
-.header-content-left nav ul li a.active {
+nav ul li a.active {
   color: #5b96fc;
 }
 
-.header-content-right {
+.right-menu {
   display: flex;
   gap: 15px;
 }
 
-.header-content-right button {
+.right-menu button {
   width: 80px;
   height: 38px;
   border: none;
@@ -94,4 +88,20 @@ button.sign-in-btn:hover {
 
 button.sign-up-btn:hover {
   background: #1e55b5;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-button span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: grey;
+  border-radius: 5px;
 }
