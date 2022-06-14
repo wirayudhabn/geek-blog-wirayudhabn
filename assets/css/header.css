@@ -106,8 +106,8 @@ button.sign-up-btn:hover {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: grey;
-  border-radius: 5px;
+  background-color: #000;
+  border-radius: 10px;
 }
 
 .mobile-btn {
