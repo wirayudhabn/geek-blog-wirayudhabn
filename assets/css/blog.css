@@ -38,6 +38,7 @@
   overflow: hidden;
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 }
 
 .writer-img img {
@@ -55,6 +56,7 @@
   align-self: flex-start;
   height: auto;
   gap: 10px;
+  text-align: center;
 }
 
 .post-socmed img {
@@ -165,4 +167,22 @@
 
 .link-reference {
   color: #4a8bfc;
+}
+
+.share-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.share-icon {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share-icon a {
+  text-decoration: none;
 }
